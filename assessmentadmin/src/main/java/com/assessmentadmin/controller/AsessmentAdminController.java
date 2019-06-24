@@ -1,12 +1,16 @@
 package com.assessmentadmin.controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController("assessmentadmin")
+@Controller
 public class AsessmentAdminController {
-	
-	
-	
-	
+
+    @RequestMapping("home")
+    public String getHome(){
+        System.out.println("home.jsp");
+        return "home.jsp";
+    }
+
 
 }
