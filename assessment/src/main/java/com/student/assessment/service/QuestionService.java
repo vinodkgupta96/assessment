@@ -13,7 +13,7 @@ public class QuestionService {
 	
 	
 	public Question getQuestionById(Long id) {
-		return assesssmentQuestionRepository.findOne(id);
+		return assesssmentQuestionRepository.getOne(id);
 	}
 
 	public List<Question>getAllQuestion(){
